@@ -7,7 +7,7 @@ export const HomeContent = () => {
         <img src='https://assets.website-files.com/62e7dd8eb96f150931bf8901/633de349ae424383a2e10038_Smiling-Girl-p-500.png'/>
         <h1 
         className='pt-5'
-        style={{"fontSize":"30vw","color":"",'zIndex':"0"}}>Dozaii</h1>
+        style={{"fontSize":"30vw","color":"",'zIndex':"0"}}>Dozai</h1>
     </div>
     <div className="container images d-flex justify-content-between  h-100 align-items-center">
         <img 
