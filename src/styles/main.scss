@@ -8,9 +8,12 @@
 
 body {
     position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 section {
+    overflow: hidden;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,6 +104,12 @@ section {
         border-radius: 50%;
 
         &:nth-child(1) {
+            animation-name: anim;
+            z-index: -10000;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode:forwards;
+            animation-duration: 1s;
             margin-top: 200px !important;
         }
 
@@ -112,11 +121,25 @@ section {
 
 
 }
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateX(300px) translateY(-50px) rotate(180deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0px) rotate(0);
+    }
+}
+
 @media screen and (max-width:768px) {
     .homecontent img {
         height: 500px;
         z-index: 1000000;
     }
+
     .images img {
         width: 5rem;
     }
