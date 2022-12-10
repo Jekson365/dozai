@@ -7,17 +7,18 @@
 }
 
 body {
+    background-color: #242227;
     position: relative;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 
 section {
+    position: relative;
     overflow: hidden;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: gray;
 }
 
 .navigation {
@@ -57,6 +58,7 @@ section {
     }
 
     .fs-7 {
+        white-space: nowrap;
         font-size: 0.7rem;
 
         &:nth-child(1) {
@@ -76,7 +78,8 @@ section {
 }
 
 .homecontent {
-    background-color: rgba(55, 55, 55, 0.505);
+    overflow: hidden;
+    background-color: rgba(20, 19, 20, 0.782);
     position: absolute;
     top: 0;
     left: 0;
@@ -112,16 +115,60 @@ section {
             animation-duration: 1s;
             margin-top: 200px !important;
         }
-
+        
         &:nth-child(2) {
-
+            opacity: 0;
+            animation-delay: 1.5s;
+            animation-name: anim2;
+            animation-fill-mode:forwards;
+            animation-duration: 1s;
             margin-bottom: 200px !important;
         }
     }
 
 
 }
+.circle {
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation-delay: 1s;
+    background-color: #ef476f;
+    width:0px;
+    animation-fill-mode: forwards;
+    height: 0px;
+    border-radius: 50%;
+    animation-delay: 0.5;
+    animation-name: anim3;
+    animation-duration: 2.5s;
+}
+@keyframes anim3 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 2000px;
+        height: 2000px;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+@keyframes anim2 {
+    from {
+        opacity: 0;
+        transform: translateX(-300px) translateY(50px) rotate(180deg);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0px) rotate(0);
+    }
+}
 @keyframes anim {
     from {
         opacity: 0;
@@ -136,11 +183,18 @@ section {
 
 @media screen and (max-width:768px) {
     .homecontent img {
-        height: 500px;
+        height: 300px;
         z-index: 1000000;
     }
 
     .images img {
         width: 5rem;
+    }
+    .navigation {
+        padding: 0 1rem;
+        
+    }
+    .custom {
+        height: 60vh;
     }
 }

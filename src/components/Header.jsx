@@ -14,7 +14,7 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className="col text-center text-white d-md-flex d-none justify-content-center">
-                    <span>Email:</span> <p className="fs-6">
+                    <span style={{"color":"gray"}}>Email:</span> <p className="fs-6">
                         dozai@template.com
                     </p>
                 </div>

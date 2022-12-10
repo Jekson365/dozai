@@ -4,6 +4,7 @@ import { SectionHome } from './sections/homecomponents/SectionHome'
 import './styles/main.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Socials } from './components/Socials';
 
 function App() {
   useEffect(()=> {
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <SectionHome/>
+      <Socials/>
     </>
   )
 }
