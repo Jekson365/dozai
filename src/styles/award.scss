@@ -1,0 +1,32 @@
+.award {
+    p {
+        color: gray;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    .aw {
+        font-size: 3.5vw;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .award-box {
+        position: relative;
+    }
+    
+    .award-box:not(.award-box:last-child)::before {
+        right: 0;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: rgba(128, 128, 128, 0.468);
+        position: absolute;
+    }
+    
+}

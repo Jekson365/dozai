@@ -5,15 +5,28 @@ import './styles/main.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Socials } from './components/Socials';
+import { Cart } from './components/Cart';
+import { createContext } from 'react';
+import { Award } from './sections/homecomponents/Award';
+import { Team } from './sections/homecomponents/Team';
+
+
+export const Mycontext = createContext()
 
 function App() {
-  useEffect(()=> {
+  useEffect(() => {
     AOS.init()
   })
+
+  const [cart, setCart] = useState(true)
   return (
     <>
-      <SectionHome/>
-      <Socials/>
+      <Mycontext.Provider value={{ cart, setCart }}>
+        <SectionHome />
+        <Socials />
+        <Award/>
+        <Team/>
+      </Mycontext.Provider>
     </>
   )
 }
