@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+
+}
+
+body {
+    position: relative;
+}
+
+section {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 5rem;
+    height: 6rem;
+
+    .crt {
+        p {
+            margin: 0 20px;
+        }
+    }
+
+    .icn {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            left: 80px;
+            top: 0;
+            content: "";
+            background-color: rgb(225, 225, 225);
+        }
+    }
+
+    .fs-7 {
+        font-size: 0.7rem;
+
+        &:nth-child(1) {
+            color: #f77f00;
+        }
+
+        &:nth-child(2) {
+            color: #ef476f;
+        }
+    }
+
+    .col {
+        span {
+            color: rgb(216, 216, 216);
+        }
+    }
+}
+
+.homecontent {
+    background-color: rgba(55, 55, 55, 0.505);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+        bottom: 0;
+        z-index: 10;
+        height: 700px;
+        position: absolute;
+    }
+
+}
+
+.images {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+
+    img {
+        max-width: 10rem;
+        border-radius: 50%;
+
+        &:nth-child(1) {
+            margin-top: 200px !important;
+        }
+
+        &:nth-child(2) {
+
+            margin-bottom: 200px !important;
+        }
+    }
+
+
+}
+@media screen and (max-width:768px) {
+    .homecontent img {
+        height: 500px;
+        z-index: 1000000;
+    }
+    .images img {
+        width: 5rem;
+    }
+}
