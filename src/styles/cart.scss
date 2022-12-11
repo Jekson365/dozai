@@ -1,6 +1,6 @@
 .cart {
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100000;
@@ -26,7 +26,7 @@
 .overlay {
     background-color: #242227;
     opacity: 0.8;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

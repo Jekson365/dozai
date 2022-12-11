@@ -9,6 +9,7 @@ import { Cart } from './components/Cart';
 import { createContext } from 'react';
 import { Award } from './sections/homecomponents/Award';
 import { Team } from './sections/homecomponents/Team';
+import { Prods } from './sections/homecomponents/Prods';
 
 
 export const Mycontext = createContext()
@@ -26,6 +27,7 @@ function App() {
         <Socials />
         <Award/>
         <Team/>
+        <Prods/>
       </Mycontext.Provider>
     </>
   )

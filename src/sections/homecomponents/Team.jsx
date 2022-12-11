@@ -27,10 +27,12 @@ export const Team = () => {
                     src="https://assets.website-files.com/62e7dd8eb96f150931bf8901/633de7ddcab0e750cdc85f56_woman-her-digital-tablet.png" alt="" />
                 <div className="rad-images w-100 h-100 flex-column d-flex justify-content-between align-items-center">
                     <div className="content-image"
-                        style={{ "backgroundImage": `url('https://assets.website-files.com/62e7dd8eb96f150931bf8901/6341944ac245b87739c2be6d_Product-1.jpg')` }}
+                    data-aos='fade-up-right'
+                    style={{ "backgroundImage": `url('https://assets.website-files.com/62e7dd8eb96f150931bf8901/6341944ac245b87739c2be6d_Product-1.jpg')` }}
                     >
                     </div>
                     <div className="content-image-2"
+                        data-aos='fade-up-left'
                         style={{ "backgroundImage": `url('https://assets.website-files.com/62e7dd8eb96f150931bf8901/634196bd8c1d69d6fffc5e9b_Product-5.jpg')` }}
                     ></div>
                 </div>
