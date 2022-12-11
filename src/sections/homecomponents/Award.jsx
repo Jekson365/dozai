@@ -36,7 +36,7 @@ export const Award = () => {
                 <p>Awards & Appreciation</p>
                 <h1 className='h1'>Our Recent</h1>
                 <p className="aw">AWARD</p>
-                <div className="container flex-wrap pb-5 h-75 d-flex align-items-center justify-content-center">
+                <div className="container pt-5 flex-wrap pb-5 h-75 d-flex align-items-center justify-content-center">
                     {awards.map((each) => {
                         const { img, name, desc } = each
                         return (
