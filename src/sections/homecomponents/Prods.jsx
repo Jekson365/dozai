@@ -1,4 +1,6 @@
 import React from 'react'
+import { AiOutlinePlus } from 'react-icons/ai'
+import '../../styles/team.scss'
 
 export const Prods = () => {
     return (
@@ -14,9 +16,47 @@ export const Prods = () => {
                         and massive new features, the Salerio template pushes <br />
                         the limits of what is possible with a Webflow platform.
                     </p>
-                    <button className='more-temps'>
-                        More Templates
-                    </button>
+                    <div className="tabs bg-priamry w-100">
+                        <div
+                        className="row d-flex w-100 justify-content-between align-items-center">
+
+                            <div className="col">
+                                <p className="fs-6 text-white">ADD PRESENTATION</p>
+                            </div>
+                            <div className="col text-right d-flex justify-content-end">
+                                <AiOutlinePlus className='orange'/>
+                            </div>
+
+                        </div>
+                        <div
+                        className="row d-flex w-100 justify-content-between align-items-center">
+                            <div className="col">
+                                <p className="fs-6 text-white">
+                                    RESPONSIVE DESIGN
+                                </p>
+                            </div>
+                            <div className="col text-right d-flex justify-content-end">
+                                <AiOutlinePlus className='orange'/>
+                            </div>
+
+                        </div>
+                        <div
+                        className="row d-flex w-100 justify-content-between align-items-center">
+
+                            <div className="col">
+                                <p className="fs-6 text-white">
+                                    SOCIAL MEDIA ADS
+                                </p>
+                            </div>
+                            <div className="col text-right d-flex justify-content-end">
+                                <AiOutlinePlus className='orange' />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
                 <div className="col-md-6 position-relative"
                     data-aos='fade-left'

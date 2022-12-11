@@ -10,7 +10,7 @@
             color: gray;
         }
     }
-
+        
     p {
         font-size: 15px;
         color: gray;
@@ -124,6 +124,20 @@
             opacity: 1;
             transform: translateX(0) translateY(0px) rotate(0);
         }
+    }
+}
+.orange {
+    font-size: 20px;
+    color: orangered;
+}
+.tabs {
+    .row {
+        transition: 0.3s;
+    }
+    .row:hover {
+        padding: 0 20px;
+        cursor: pointer;
+    background-color: rgb(28, 28, 28);
     }
 }
 
