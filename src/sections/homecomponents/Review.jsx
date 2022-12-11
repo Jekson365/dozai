@@ -35,7 +35,9 @@ export const Review = () => {
     ]
     return (
         <>
-            <div className=" d-flex position-relative flex-wrap" style={{ "marginTop": "220px",'maxWidth':"1300px",'overflow':"hidden", 'width': "90%", 'margin': "220px auto" }}>
+            <div className=" d-flex position-relative flex-wrap" style=
+            {{ "marginTop": "220px",'maxWidth':"1300px",'overflow':"hidden", 'width': "90%",
+             'margin': "220px auto"}}>
                 <div className="col-md-7 d-flex flex-column align-items-center justify-content-center" >
 
                     {users.map((each) => {
@@ -78,7 +80,9 @@ export const Review = () => {
                     })}
                 </div>
                 <div 
-                className="sticky col-md-5 pt-5 d-flex flex-column align-items-start" data-aos='zoom-in'>
+                className="sticky col-md-5 pt-5 d-flex flex-column align-items-start"
+                style={{'height':"600px"}}
+                data-aos='zoom-in'>
                     <p className="p text-gray">TESTIMONILAS</p>
                     <h1 className='title'>What They<br/> <span>Say`s about us </span></h1>
                     <p className="fs-5 text-gray mt-3">

@@ -12,6 +12,7 @@ import { Team } from './sections/homecomponents/Team';
 import { Prods } from './sections/homecomponents/Prods';
 import { Scrollable } from './sections/homecomponents/Scrollable';
 import { Review } from './sections/homecomponents/Review';
+import { Agency } from './sections/homecomponents/Agency';
 
 
 export const Mycontext = createContext()
@@ -32,6 +33,7 @@ function App() {
         <Prods/>
         <Scrollable/>
         <Review/>
+        <Agency/>
       </Mycontext.Provider>
     </>
   )

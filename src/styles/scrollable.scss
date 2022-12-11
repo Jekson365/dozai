@@ -25,6 +25,19 @@ $pink : #ef476f;
         color: gray;
     }
 }
+.logos img {
+    width: 150px;
+}
+.title2 {
+    margin: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size:5vw;
+    color: white;
+    span {
+        color: #6d6875;
+    }
+}
 .sticky {
     position: -webkit-sticky;
     position: sticky;
