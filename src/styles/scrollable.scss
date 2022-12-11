@@ -108,3 +108,30 @@ $pink : #ef476f;
         position:relative;
     }
 }
+
+.exp {
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-size: cover;   
+    }
+    .card-card {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22vw;
+        flex-direction: column;
+        height: 180px;
+        background-color: #242227;
+    h1 {
+        font-size: 4vw;
+    }
+    p {
+        font-weight: bold;
+        font-family: serif !important;
+    }
+    }
+    
+}
