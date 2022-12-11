@@ -1,8 +1,43 @@
+$ornage : #f77f00;
+$pink : #ef476f;
+
+.orange {
+    color:$ornage;
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+}
+.text-gray {
+    color: #6d6875;
+}
+.pink {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: $pink;
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+    span {
+        color: gray;
+    }
+}
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
     left: 0;
+}
+.sdast {
+    position: sticky;
+    top: 0px;
+    left: 0;
+    height: auto;
+    background-color: red;
+    position: -webkit-sticky;
 }
 .cover-box {
     height: 600px;
@@ -33,7 +68,28 @@
         background-color: rgb(226, 87, 133);
     }
 }
- 
+
+.rev-box {
+    background-color: #242227;
+    .nm {
+        padding-left: 20px;
+        padding-top: 6px;
+        h3 {
+            color: white;
+            font-weight: bold;
+        }
+        p {
+            color: #6d6875;
+        }
+    }
+    .rev {
+        color: #6d6875;
+    }
+    .rate {
+        color: #ef476f;
+    }
+}
+
 @media screen and (max-width:768px) {
     .sticky {
         position:relative;

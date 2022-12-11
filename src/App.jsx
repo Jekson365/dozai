@@ -11,6 +11,7 @@ import { Award } from './sections/homecomponents/Award';
 import { Team } from './sections/homecomponents/Team';
 import { Prods } from './sections/homecomponents/Prods';
 import { Scrollable } from './sections/homecomponents/Scrollable';
+import { Review } from './sections/homecomponents/Review';
 
 
 export const Mycontext = createContext()
@@ -30,6 +31,7 @@ function App() {
         <Team/>
         <Prods/>
         <Scrollable/>
+        <Review/>
       </Mycontext.Provider>
     </>
   )
