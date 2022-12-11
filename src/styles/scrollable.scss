@@ -1,0 +1,41 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    left: 0;
+}
+.cover-box {
+    height: 600px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.pink-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: gray;
+    &:hover {
+        background-color: rgb(226, 87, 133) !important;
+    }
+}
+.asli {
+    cursor: pointer;
+    color: gray;
+    transition: 0.3s;
+    &:hover {
+        color: white;
+    }
+    &:hover .pink-circle {
+        background-color: rgb(226, 87, 133);
+    }
+}
+ 
+@media screen and (max-width:768px) {
+    .sticky {
+        position:relative;
+    }
+}
