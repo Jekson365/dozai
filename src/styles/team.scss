@@ -10,7 +10,7 @@
             color: gray;
         }
     }
-        
+
     p {
         font-size: 15px;
         color: gray;
@@ -126,18 +126,21 @@
         }
     }
 }
+
 .orange {
     font-size: 20px;
     color: orangered;
 }
+
 .tabs {
     .row {
         transition: 0.3s;
     }
+
     .row:hover {
         padding: 0 20px;
         cursor: pointer;
-    background-color: rgb(28, 28, 28);
+        background-color: rgb(28, 28, 28);
     }
 }
 
@@ -157,4 +160,15 @@
     .content-image {
         right: 0px !important;
     }
+}
+.de-active {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.active-sub-item {
+    height: 100%;
+    overflow: visible;
+    transition: 0.3s;
 }

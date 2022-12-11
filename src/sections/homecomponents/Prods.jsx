@@ -1,11 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 import { AiOutlinePlus } from 'react-icons/ai'
 import '../../styles/team.scss'
 
 export const Prods = () => {
+    const [sub, setSub] = useState(0)
+    const handleSubItems = (id) => {
+        setSub(id)
+        
+
+    }
     return (
         <>
-            <div className='team container flex-wrap d-flex flex-row-reverse align-items-center' style={{ "height": "100vh", 'overflow': "hidden" }}>
+            <div className='team container flex-wrap d-flex flex-row-reverse align-items-center' style={{ "minHeight": "100vh", 'overflow': "hidden" }}>
                 <div className="col-md-6 d-flex align-items-start flex-column"
 
                     data-aos='zoom-in'
@@ -18,40 +25,70 @@ export const Prods = () => {
                     </p>
                     <div className="tabs bg-priamry w-100">
                         <div
-                        className="row d-flex w-100 justify-content-between align-items-center">
+                            className="row d-flex w-100 justify-content-between align-items-center position-relative" onClick={() => handleSubItems(1)}>
 
                             <div className="col">
                                 <p className="fs-6 text-white">ADD PRESENTATION</p>
                             </div>
-                            <div className="col text-right d-flex justify-content-end">
-                                <AiOutlinePlus className='orange'/>
+                            <div className="col text-right d-flex justify-content-end"  >
+                                <AiOutlinePlus className='orange' />
                             </div>
+                            <div className={`sub-section ${sub == 1 ? 'active-sub-item' : "de-active"}`} key={1}>
+                                <p className="p">
 
+                                    Suspendisse varius enim in eros elementum tristique.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis cursus, mi quis viverra ornare, eros dolor interdum
+                                    nulla, ut commodo diam libero vitae erat. Aenean faucibus
+                                    nibh et justo cursus id rutrum lorem imperdiet.
+                                    Nunc ut sem vitae risus tristique posuere.
+                                </p>
+                            </div>
                         </div>
                         <div
-                        className="row d-flex w-100 justify-content-between align-items-center">
+                            className="position-relative row d-flex w-100 justify-content-between align-items-center position-relative"  onClick={() => handleSubItems(2)} >  
                             <div className="col">
                                 <p className="fs-6 text-white">
                                     RESPONSIVE DESIGN
                                 </p>
                             </div>
                             <div className="col text-right d-flex justify-content-end">
-                                <AiOutlinePlus className='orange'/>
+                                <AiOutlinePlus className='orange' />
                             </div>
+                            <div key={2} className={`sub-section ${sub == 2 ? 'active-sub-item' : "de-active"}`} >
+                                <p className="p">
 
+                                    Suspendisse varius enim in eros elementum tristique.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis cursus, mi quis viverra ornare, eros dolor interdum
+                                    nulla, ut commodo diam libero vitae erat. Aenean faucibus
+                                    nibh et justo cursus id rutrum lorem imperdiet.
+                                    Nunc ut sem vitae risus tristique posuere.
+                                </p>
+                            </div>
                         </div>
                         <div
-                        className="row d-flex w-100 justify-content-between align-items-center">
+                            className="row d-flex w-100 justify-content-between align-items-center position-relative" onClick={() => handleSubItems(3)}>
 
                             <div className="col">
                                 <p className="fs-6 text-white">
                                     SOCIAL MEDIA ADS
                                 </p>
                             </div>
-                            <div className="col text-right d-flex justify-content-end">
+                            <div className="col text-right d-flex justify-content-end"  >
                                 <AiOutlinePlus className='orange' />
                             </div>
+                            <div className={`sub-section ${sub == 3 ? 'active-sub-item' : "de-active"}`} key={3}>
+                                <p className="p">
 
+                                    Suspendisse varius enim in eros elementum tristique.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis cursus, mi quis viverra ornare, eros dolor interdum
+                                    nulla, ut commodo diam libero vitae erat. Aenean faucibus
+                                    nibh et justo cursus id rutrum lorem imperdiet.
+                                    Nunc ut sem vitae risus tristique posuere.
+                                </p>
+                            </div>
                         </div>
 
                     </div>
