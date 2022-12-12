@@ -110,6 +110,8 @@ $pink : #ef476f;
 }
 
 .exp {
+
+
     img {
         width: 150px;
         height: 150px;
@@ -117,21 +119,39 @@ $pink : #ef476f;
         background-size: cover;   
     }
     .card-card {
-        margin: 20px 0;
+        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 22vw;
+        width: 350px;
         flex-direction: column;
-        height: 180px;
+        height: 280px;
+        margin: 20px;
         background-color: #242227;
     h1 {
-        font-size: 4vw;
+        font-size:4rem;
     }
     p {
-        font-weight: bold;
         font-family: serif !important;
+        font-size: 20px;
+    }
+    .ids {
+        will-change: transform;
+        transform: translate3d(0px, 3.2756%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        img {
+            transform: translateY(100px);
+        }
     }
     }
     
+}
+@media screen and (max-width:768px) {
+    .exp .card-card {
+        text-align: center;
+        width: 40vw;
+    }
+    .as {
+        width: 100%;
+    }
 }
