@@ -1,0 +1,58 @@
+footer {
+    @media screen and (max-width:768px) {
+        .sas {
+            width: 100% !important;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            color: #ef476f;
+        }
+    }
+    h1 {
+        font-weight: bold !important;
+        color: white;
+        letter-spacing: 4px;
+    }
+    ul {
+        list-style-type: none;
+        h1 {
+            font-size: 25px !important;
+            letter-spacing: 1px;
+        }
+    }
+    .form-group {
+
+        position: relative;
+        width: 100%;
+        input {
+            width: 90%;
+            border: 0;
+            background-color: #242227;
+            outline: 0;
+            padding: 20px 0;
+        }   
+        .subscribe {
+            position: absolute;
+            right: 71px;
+            top:3px;
+            border: 0;
+            outline: 0;
+            color: white;
+            padding: 0 25px;
+            font-weight: bold;
+            background-color: #ef476f;
+            height: 90%;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #fcbf49;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -31,7 +31,7 @@ export const Prods = () => {
                                 <p className="fs-6 text-white">ADD PRESENTATION</p>
                             </div>
                             <div className="col text-right d-flex justify-content-end"  >
-                                <AiOutlinePlus className='orange' />
+                                <AiOutlinePlus className='orange'  style={{"fontSize":"20px"}}/>
                             </div>
                             <div className={`sub-section ${sub == 1 ? 'active-sub-item' : "de-active"}`} key={1}>
                                 <p className="p">
@@ -53,7 +53,7 @@ export const Prods = () => {
                                 </p>
                             </div>
                             <div className="col text-right d-flex justify-content-end">
-                                <AiOutlinePlus className='orange' />
+                                <AiOutlinePlus className='orange'  style={{"fontSize":"20px"}}/>
                             </div>
                             <div key={2} className={`sub-section ${sub == 2 ? 'active-sub-item' : "de-active"}`} >
                                 <p className="p">
@@ -76,7 +76,7 @@ export const Prods = () => {
                                 </p>
                             </div>
                             <div className="col text-right d-flex justify-content-end"  >
-                                <AiOutlinePlus className='orange' />
+                                <AiOutlinePlus className='orange' style={{"fontSize":"20px"}} />
                             </div>
                             <div className={`sub-section ${sub == 3 ? 'active-sub-item' : "de-active"}`} key={3}>
                                 <p className="p">

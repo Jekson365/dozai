@@ -36,8 +36,10 @@ export const Review = () => {
     return (
         <>
             <div className=" d-flex position-relative flex-wrap" style=
-            {{ "marginTop": "220px",'maxWidth':"1300px",'overflow':"hidden", 'width': "90%",
-             'margin': "220px auto"}}>
+                {{
+                    "marginTop": "220px", 'maxWidth': "1300px",'width': "90%",
+                    'margin': "220px auto"
+                }}>
                 <div className="col-md-7 d-flex flex-column align-items-center justify-content-center" >
 
                     {users.map((each) => {
@@ -79,15 +81,15 @@ export const Review = () => {
                         )
                     })}
                 </div>
-                <div 
-                className="sticky col-md-5 pt-5 d-flex flex-column align-items-start"
-                style={{'height':"600px"}}
-                data-aos='zoom-in'>
+                <div
+                    className="sticky col-md-5 pt-5 d-flex flex-column align-items-start"
+                    style={{ 'height': "600px" }}
+                    data-aos='zoom-in'>
                     <p className="p text-gray">TESTIMONILAS</p>
-                    <h1 className='title'>What They<br/> <span>Say`s about us </span></h1>
+                    <h1 className='title'>What They<br /> <span>Say`s about us </span></h1>
                     <p className="fs-5 text-gray mt-3">
-                        With the greatest performance improvement and massive new 
-                        features, the Salerio template pushes the limits of what 
+                        With the greatest performance improvement and massive new
+                        features, the Salerio template pushes the limits of what
                         is possible with a Webflow platform.
                     </p>
                     <div className="numbers d-flex w-100 mt-3">
@@ -103,7 +105,7 @@ export const Review = () => {
                                 Project Designed
                             </p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

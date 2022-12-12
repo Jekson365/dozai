@@ -16,7 +16,7 @@ import { Agency } from './sections/homecomponents/Agency';
 import { Exprience } from './sections/homecomponents/Exprience';
 import { Recent } from './sections/homecomponents/Recent';
 import { Contact } from './sections/homecomponents/Contact';
-
+import { Footer } from './components/Footer';
 
 export const Mycontext = createContext()
 
@@ -40,6 +40,7 @@ function App() {
         <Exprience/>
         <Recent/>
         <Contact/>
+        <Footer/>
       </Mycontext.Provider>
     </>
   )
