@@ -2,14 +2,16 @@ $ornage : #f77f00;
 $pink : #ef476f;
 
 .orange {
-    color:$ornage;
+    color: $ornage;
     font-size: 3.5rem;
     font-weight: bold;
-    
+
 }
+
 .text-gray {
     color: #6d6875;
 }
+
 .pink {
     font-size: 3.5rem;
     font-weight: bold;
@@ -21,29 +23,35 @@ $pink : #ef476f;
     font-weight: bold;
     font-size: 3.5rem;
     color: white;
+
     span {
         color: gray;
     }
 }
+
 .logos img {
     width: 150px;
 }
+
 .title2 {
     margin: 15px;
     white-space: nowrap;
     font-weight: bold;
-    font-size:5vw;
+    font-size: 5vw;
     color: white;
+
     span {
         color: #6d6875;
     }
 }
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
     left: 0;
 }
+
 .sdast {
     position: sticky;
     top: 0px;
@@ -52,31 +60,38 @@ $pink : #ef476f;
     background-color: red;
     position: -webkit-sticky;
 }
+
 .cover-box {
     height: 600px;
+
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
+
 .pink-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin: 0 5px;
     background-color: gray;
+
     &:hover {
         background-color: rgb(226, 87, 133) !important;
     }
 }
+
 .asli {
     cursor: pointer;
     color: gray;
     transition: 0.3s;
+
     &:hover {
         color: white;
     }
+
     &:hover .pink-circle {
         background-color: rgb(226, 87, 133);
     }
@@ -84,20 +99,25 @@ $pink : #ef476f;
 
 .rev-box {
     background-color: #242227;
+
     .nm {
         padding-left: 20px;
         padding-top: 6px;
+
         h3 {
             color: white;
             font-weight: bold;
         }
+
         p {
             color: #6d6875;
         }
     }
+
     .rev {
         color: #6d6875;
     }
+
     .rate {
         color: #ef476f;
     }
@@ -105,7 +125,7 @@ $pink : #ef476f;
 
 @media screen and (max-width:768px) {
     .sticky {
-        position:relative;
+        position: relative;
     }
 }
 
@@ -116,8 +136,9 @@ $pink : #ef476f;
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        background-size: cover;   
+        background-size: cover;
     }
+
     .card-card {
         padding: 20px;
         display: flex;
@@ -128,30 +149,81 @@ $pink : #ef476f;
         height: 280px;
         margin: 20px;
         background-color: #242227;
-    h1 {
-        font-size:4rem;
-    }
-    p {
-        font-family: serif !important;
-        font-size: 20px;
-    }
-    .ids {
-        will-change: transform;
-        transform: translate3d(0px, 3.2756%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform-style: preserve-3d;
-        img {
-            transform: translateY(100px);
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-family: serif !important;
+            font-size: 20px;
+        }
+
+        .ids {
+            will-change: transform;
+            transform: translate3d(0px, 3.2756%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+
+            img {
+                transform: translateY(100px);
+            }
         }
     }
-    }
-    
+
 }
+
 @media screen and (max-width:768px) {
     .exp .card-card {
         text-align: center;
         width: 40vw;
     }
+
     .as {
         width: 100%;
+    }
+}
+
+.recent {
+    position: relative;
+
+    .bk {
+        background-size: cover;
+    }
+
+    .st {
+        top: 0;
+        position: sticky;
+    }
+
+    .cl {
+        color: #6d6875;
+    }
+
+    .bt {
+        color: white;
+        background-color: #f77f00;
+        border-radius: 20px;
+        padding: 5px 20px;
+        font-weight: bold;
+    }
+
+   
+}
+.txt-cont {
+    padding: 0 90px;
+}
+
+@media screen and (max-width:1027px) {
+
+    .wrap-it {
+        flex-wrap: wrap !important;
+        height: fit-content !important;
+    }
+    .bk {
+        width: 100% !important;
+    }
+    .txt-cont{
+        width: 100%;
+        padding: 20px;
     }
 }

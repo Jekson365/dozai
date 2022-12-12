@@ -14,6 +14,7 @@ import { Scrollable } from './sections/homecomponents/Scrollable';
 import { Review } from './sections/homecomponents/Review';
 import { Agency } from './sections/homecomponents/Agency';
 import { Exprience } from './sections/homecomponents/Exprience';
+import { Recent } from './sections/homecomponents/Recent';
 
 
 export const Mycontext = createContext()
@@ -36,6 +37,7 @@ function App() {
         <Review/>
         <Agency/>
         <Exprience/>
+        <Recent/>
       </Mycontext.Provider>
     </>
   )
