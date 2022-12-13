@@ -71,9 +71,9 @@ export const Scrollable = () => {
                                 return (
                                     <>
                                         <li
-                                            
+
                                             className='asli mt-5   d-flex flex-row align-items-center'>
-                                            <div className="pink-circle mb-3  "></div>
+                                            <div className="pink-circle mb-3"></div>
                                             <p className="fs-5">{sec}</p>
                                         </li>
                                     </>
@@ -85,8 +85,24 @@ export const Scrollable = () => {
                         {arr.map((each) => {
                             return (
                                 <>
-                                    <div 
-                                    className="cover-box mt-5" style={{ "overflow": "hidden" }}>
+                                    <div
+                                        className="cover-box mt-5 position-relative" style={{ "overflow": "hidden" }}>
+                                        <ul
+                                            style={{ "height": "150px", 'width': "90%", 'margin': "0 auto",'listStyle':"none"}}
+                                            className="content  d-flex align-items-center justify-content-center position-absolute ">
+                                            <li className='col-md-4 text-center'>
+                                                <p className="fs-6 text-white">{each.provider}</p>
+                                                <p style={{ "fontSize": "13px" }} className="text-gray">Service Provided</p>
+                                            </li>
+                                            <li className='col-md-4 text-center'>
+                                                <p className="fs-6 text-white">{each.client}</p>
+                                                <p style={{ "fontSize": "13px" }} className="text-gray">Client</p>
+                                            </li>
+                                            <li className='col-md-4 text-center'>
+                                                <p className="fs-6 text-white">{each.date}</p>
+                                                <p style={{ "fontSize": "13px" }} className="text-gray">Release Date</p>
+                                            </li>
+                                        </ul>
                                         <img src={each.img} />
                                     </div>
                                 </>

@@ -7,10 +7,17 @@ import { FaTimes } from 'react-icons/fa'
 
 
 export const Header = () => {
-    const { cart, setCart } = useContext(Mycontext)
+    const { cart, setCart, nav, setNav } = useContext(Mycontext)
     return (
         <>
-            <div className="navigation container-fluid d-flex justify-content-between align-items-center" style={{ "zIndex": '100000' }}>
+            <div className={`navbar ${nav ? "on" : "off"}`}>
+                <h1 data-aos='fade-down' data-aos-duration='1000'>Home</h1>
+                <h1 data-aos='fade-down' data-aos-duration='1200'>About</h1>
+                <h1 data-aos='fade-down' data-aos-duration='1400'>Work</h1>
+                <h1 data-aos='fade-down' data-aos-duration='1600'>News</h1>
+                <h1 data-aos='fade-down' data-aos-duration='1800'>Contact</h1>
+            </div>
+            <div className="navigation container-fluid d-flex justify-content-between align-items-center" style={{ "zIndex": '10000000' }}>
                 <div className="col text-left d-flex flex-row">
                     <h3 className='h4'>DOZAI</h3>
                     <div className="container d-flex flex-column">
@@ -30,7 +37,11 @@ export const Header = () => {
                             style={{ "cursor": "pointer" }}
                         >Cart</p>
                         <p className="p text-white">
-                            <HiBars3CenterLeft className='icn' />
+                            {!nav ? <HiBars3CenterLeft className='icn'
+                                onClick={() => setNav(!nav)}
+                            /> : <FaTimes className='icn'
+                                onClick={() => setNav(!nav)}
+                            />}
                         </p>
                     </div>
                 </div>

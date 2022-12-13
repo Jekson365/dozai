@@ -26,21 +26,22 @@ function App() {
   })
 
   const [cart, setCart] = useState(true)
+  const [nav, setNav] = useState(false)
   return (
     <>
-      <Mycontext.Provider value={{ cart, setCart }}>
+      <Mycontext.Provider value={{ cart, setCart, setNav, nav }}>
         <SectionHome />
         <Socials />
-        <Award/>
-        <Team/>
-        <Prods/>
-        <Scrollable/>
-        <Review/>
-        <Agency/>
-        <Exprience/>
-        <Recent/>
-        <Contact/>
-        <Footer/>
+        <Award />
+        <Team />
+        <Prods />
+        <Scrollable />
+        <Review />
+        <Agency />
+        <Exprience />
+        <Recent />
+        <Contact />
+        <Footer />
       </Mycontext.Provider>
     </>
   )

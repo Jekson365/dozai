@@ -37,6 +37,7 @@ section {
     }
 
     .icn {
+        cursor: pointer;
         font-size: 2.5rem;
     }
 
@@ -111,16 +112,16 @@ section {
             z-index: -10000;
             animation-delay: 1s;
             opacity: 0;
-            animation-fill-mode:forwards;
+            animation-fill-mode: forwards;
             animation-duration: 1s;
             margin-top: 200px !important;
         }
-        
+
         &:nth-child(2) {
             opacity: 0;
             animation-delay: 1.5s;
             animation-name: anim2;
-            animation-fill-mode:forwards;
+            animation-fill-mode: forwards;
             animation-duration: 1s;
             margin-bottom: 200px !important;
         }
@@ -128,15 +129,16 @@ section {
 
 
 }
+
 .circle {
     background-color: red;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     animation-delay: 1s;
     background-color: #ef476f;
-    width:0px;
+    width: 0px;
     animation-fill-mode: forwards;
     height: 0px;
     border-radius: 50%;
@@ -144,20 +146,24 @@ section {
     animation-name: anim3;
     animation-duration: 2.5s;
 }
+
 @keyframes anim3 {
     0% {
         width: 0;
         height: 0;
     }
+
     50% {
         width: 2000px;
         height: 2000px;
     }
+
     100% {
         width: 0;
         height: 0;
     }
 }
+
 @keyframes anim2 {
     from {
         opacity: 0;
@@ -169,6 +175,7 @@ section {
         transform: translateX(0) translateY(0px) rotate(0);
     }
 }
+
 @keyframes anim {
     from {
         opacity: 0;
@@ -190,11 +197,71 @@ section {
     .images img {
         width: 5rem;
     }
+
     .navigation {
         padding: 0 1rem;
-        
+
     }
+
     .custom {
         height: 60vh;
     }
+}
+
+.on {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.off {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.navbar {
+    position: absolute;
+    background-color: rgba(36, 34, 34, 0.596);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 10000000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 7vw;
+        color: white;
+    }
+}
+.cover-box {
+    cursor: pointer;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px) !important;
+    transform: translateY(100px) translate(-50%,0);
+    opacity: 0;
+    bottom: 25px;
+    left: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    ul {
+        list-style-type: none !important;
+        li  {
+            
+            list-style-type: none !important;
+        }
+
+    }
+}
+
+.cover-box:hover .content {
+    transform: translateY(0px) translate(-50%,0);
+    opacity: 1;
 }
