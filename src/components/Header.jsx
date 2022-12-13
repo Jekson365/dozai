@@ -10,13 +10,7 @@ export const Header = () => {
     const { cart, setCart, nav, setNav } = useContext(Mycontext)
     return (
         <>
-            <div className={`navbar ${nav ? "on" : "off"}`}>
-                <h1 data-aos='fade-down' data-aos-duration='1000'>Home</h1>
-                <h1 data-aos='fade-down' data-aos-duration='1200'>About</h1>
-                <h1 data-aos='fade-down' data-aos-duration='1400'>Work</h1>
-                <h1 data-aos='fade-down' data-aos-duration='1600'>News</h1>
-                <h1 data-aos='fade-down' data-aos-duration='1800'>Contact</h1>
-            </div>
+           
             <div className="navigation container-fluid d-flex justify-content-between align-items-center" style={{ "zIndex": '10000000' }}>
                 <div className="col text-left d-flex flex-row">
                     <h3 className='h4'>DOZAI</h3>

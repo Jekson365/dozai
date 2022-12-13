@@ -60,6 +60,10 @@ export const Scrollable = () => {
     const sections = [
         'Dozai Interactive', 'Template Animation Scene', 'Design Brand Identity', 'Best Practices Design', 'Advertising Scenario', 'All About Sweettnes'
     ]
+    const [mousePos, setMousePos] = useState({})
+    useEffect(() => {
+        console.log(mousePos)
+    }, [mousePos])
     return (
 
         <>
@@ -81,14 +85,17 @@ export const Scrollable = () => {
                             })}
                         </ul>
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-md-7 dsdx"
+                        onMouseOver={(event) => setMousePos({ x: event.clientX, y: event.clientY })}
+                    >
                         {arr.map((each) => {
                             return (
                                 <>
                                     <div
+
                                         className="cover-box mt-5 position-relative" style={{ "overflow": "hidden" }}>
                                         <ul
-                                            style={{ "height": "150px", 'width': "90%", 'margin': "0 auto",'listStyle':"none"}}
+                                            style={{ "height": "150px", 'width': "90%", 'margin': "0 auto", 'listStyle': "none" }}
                                             className="content  d-flex align-items-center justify-content-center position-absolute ">
                                             <li className='col-md-4 text-center'>
                                                 <p className="fs-6 text-white">{each.provider}</p>

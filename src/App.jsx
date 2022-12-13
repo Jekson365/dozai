@@ -30,6 +30,14 @@ function App() {
   return (
     <>
       <Mycontext.Provider value={{ cart, setCart, setNav, nav }}>
+
+        <div className={`navbar ${nav ? "on" : "off"}`}>
+          <h1 data-aos='fade-down' data-aos-duration='1000'>Home</h1>
+          <h1 data-aos='fade-down' data-aos-duration='1200'>About</h1>
+          <h1 data-aos='fade-down' data-aos-duration='1400'>Work</h1>
+          <h1 data-aos='fade-down' data-aos-duration='1600'>News</h1>
+          <h1 data-aos='fade-down' data-aos-duration='1800'>Contact</h1>
+        </div>
         <SectionHome />
         <Socials />
         <Award />
