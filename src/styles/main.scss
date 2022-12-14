@@ -232,8 +232,9 @@ section {
     justify-content: center;
     flex-direction: column;
 
-    h1 {
-        font-size: 7vw;
+    a {
+        text-decoration: none;
+        font-size: 5vw;
         color: white;
         transition: 0.3s;
         cursor: pointer;

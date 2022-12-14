@@ -1,5 +1,6 @@
 import React from 'react'
 import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 import { Socials } from '../components/Socials'
 import { Agency } from '../sections/homecomponents/Agency'
 import { Award } from '../sections/homecomponents/Award'
@@ -34,6 +35,7 @@ export const Home = () => {
     ]
     return (
         <div>
+            <Header/>
             <SectionHome />
             <Socials />
             <Award />
@@ -42,7 +44,7 @@ export const Home = () => {
             <Scrollable />
             <Review />
             <Agency />
-            <Exprience props={cards} />
+            <Exprience cards={cards} />
             <Recent />
             <Contact />
             <Footer />

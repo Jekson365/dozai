@@ -6,8 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { createContext } from 'react';
 import { Home } from './pages/Home';
-import { Routes, HashRouter, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, HashRouter, Route, BrowserRouter, Link } from 'react-router-dom'
 import { About } from './about/About';
+import { Projects } from './pages/Projects';
 
 export const Mycontext = createContext()
 
@@ -24,15 +25,16 @@ function App() {
       <BrowserRouter>
         <Mycontext.Provider value={{ cart, setCart, setNav, nav }}>
           <div className={`navbar ${nav ? "on" : "off"}`}>
-            <h1 data-aos='fade-down' data-aos-duration='1000'>Home</h1>
-            <h1 data-aos='fade-down' data-aos-duration='1200'>About</h1>
-            <h1 data-aos='fade-down' data-aos-duration='1400'>Work</h1>
-            <h1 data-aos='fade-down' data-aos-duration='1600'>News</h1>
-            <h1 data-aos='fade-down' data-aos-duration='1800'>Contact</h1>
+            <Link to={'/home'} data-aos='fade-down' data-aos-duration='1000'>Home</Link>
+            <Link to={'/about'} data-aos='fade-down' data-aos-duration='1200'>About</Link>
+            <Link to={'/work'} data-aos='fade-down' data-aos-duration='1400'>Work</Link>
+            <Link to={'/'} data-aos='fade-down' data-aos-duration='1600'>News</Link>
+            <Link to={'/'} data-aos='fade-down' data-aos-duration='1800'>Contact</Link>
           </div>
           <Routes>
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
+            <Route path='/work' element={<Projects />} />
           </Routes>
         </Mycontext.Provider>
       </BrowserRouter>
