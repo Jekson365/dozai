@@ -4,8 +4,6 @@ import { useState } from 'react'
 import { HiBars3CenterLeft } from 'react-icons/hi2'
 import { Mycontext } from '../App'
 import { FaTimes } from 'react-icons/fa'
-
-
 export const Header = () => {
     const { cart, setCart, nav, setNav } = useContext(Mycontext)
     return (

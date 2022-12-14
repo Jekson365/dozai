@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { Mycontext } from '../App'
 import { FaTimes } from 'react-icons/fa'
 import '.././styles/team.scss'
+import '.././styles/main.scss'
 
 export const Cart = () => {
 
@@ -13,8 +14,10 @@ export const Cart = () => {
 
     return (
         <>
-            <div className={`overlay ${cart ? "d-none" : "d-block"}`}></div>
-            <div className={`cart ${cart ? "deactive-cart" : 'active-cart'}`} style={{ "overflow": "hidden", "zIndex": "10000000" }}>
+            <div 
+            className={`overlay ${cart ? "d-none" : "d-block"}`}></div>
+            <div 
+            className={`cart ${cart ? "deactive-cart" : 'active-cart'}`} style={{ "overflow": "hidden", "zIndex": "10000000000" }}>
                 <div
                     style={{ "height": "60px", 'padding': "0 10px", 'borderBottom': "0.3px solid gray" }}
                     className="row d-flex align-items-center justify-content-center">
