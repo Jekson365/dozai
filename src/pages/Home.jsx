@@ -13,17 +13,36 @@ import { SectionHome } from '../sections/homecomponents/SectionHome'
 import { Team } from '../sections/homecomponents/Team'
 
 export const Home = () => {
+    const cards = [
+        {
+            num: "12+",
+            title: "Years Experience"
+        },
+        {
+            num: "87+",
+            title: "Happy Clients"
+        },
+        {
+            num: "135+",
+            title: "Completed Projects"
+        },
+        {
+            num: "15+",
+            title: "Metric description"
+        },
+
+    ]
     return (
         <div>
             <SectionHome />
             <Socials />
             <Award />
             <Team />
-            <Prods />
+            <Prods />   
             <Scrollable />
             <Review />
             <Agency />
-            <Exprience />
+            <Exprience props={cards} />
             <Recent />
             <Contact />
             <Footer />

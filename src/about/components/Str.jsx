@@ -6,7 +6,7 @@ export const Str = () => {
             <div className="flex-wrap cs container
             d-flex align-items-center justify-content-center
             " style={{ "height": "100vh" }}>
-                <div className="col-md-6 w-50">
+                <div className="col-md-6">
                     <h1
                         className='text-white'
                         style={{
@@ -24,7 +24,7 @@ export const Str = () => {
                     </p>
                     <button className='pnk'>More Templates</button>
                 </div>
-                <div className="col-md-6 h-100 w-50"
+                <div className="col-md-6 h-100 axxa"
                     style={{
                         "backgroundImage": "url('https://assets.website-files.com/62e7dd8eb96f150931bf8901/634029dcde6af5e6b375d2f3_business-person.jpg')",
                         "backgroundSize": "cover"

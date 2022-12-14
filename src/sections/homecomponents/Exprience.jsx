@@ -1,26 +1,8 @@
 import React from 'react'
 import '../../styles/scrollable.scss'
 
-export const Exprience = () => {
-    const cards = [
-        {
-            num: "12+",
-            title: "Years Experience"
-        },
-        {
-            num: "87+",
-            title: "Happy Clients"
-        },
-        {
-            num: "135+",
-            title: "Completed Projects"
-        },
-        {
-            num: "15+",
-            title: "Metric description"
-        },
-
-    ]
+export const Exprience = ({cards}) => {
+    
     return (
         <>
             <div 
