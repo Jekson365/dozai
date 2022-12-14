@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     
-      <HashRouter basename='/'>
+      <BrowserRouter basename='/'>
         <Mycontext.Provider value={{ cart, setCart, setNav, nav }}>
           <div className={`navbar ${nav ? "on" : "off"}`}>
             <Link to={'/dozai/home'} data-aos='fade-down' data-aos-duration='1000'>Home</Link>
@@ -35,7 +35,7 @@ function App() {
             <Route path='/work' element={<Projects />} />
           </Routes>
         </Mycontext.Provider>
-      </HashRouter>
+      </BrowserRouter>
     </>
   )
 }
