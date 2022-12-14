@@ -21,21 +21,21 @@ function App() {
   const [nav, setNav] = useState(false)
   return (
     <>
-    
-      <BrowserRouter basename='/'>
+
+      <HashRouter basename='/'>
         <Mycontext.Provider value={{ cart, setCart, setNav, nav }}>
           <div className={`navbar ${nav ? "on" : "off"}`}>
-            <Link to={'/dozai/home'} data-aos='fade-down' data-aos-duration='1000'>Home</Link>
-            <Link to={'/dozai/about'} data-aos='fade-down' data-aos-duration='1200'>About</Link>
-            <Link to={'/dozai/work'} data-aos='fade-down' data-aos-duration='1400'>Work</Link>
+            <Link to={'/'} data-aos='fade-down' data-aos-duration='1000'>Home</Link>
+            <Link to={'/about'} data-aos='fade-down' data-aos-duration='1200'>About</Link>
+            <Link to={'/work'} data-aos='fade-down' data-aos-duration='1400'>Work</Link>
           </div>
           <Routes>
-            <Route path='/dozai/home' element={<Home />} />
-            <Route path='/dozai/about' element={<About />} />
-            <Route path='/dozai/work' element={<Projects />} />
+            <Route path={'/'} element={<Home />} />
+            <Route path={'/about'} element={<About />} />
+            <Route path={'/work'} element={<Projects />} />
           </Routes>
         </Mycontext.Provider>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
