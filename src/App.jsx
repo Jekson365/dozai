@@ -30,9 +30,9 @@ function App() {
             <Link to={'/dozai/work'} data-aos='fade-down' data-aos-duration='1400'>Work</Link>
           </div>
           <Routes>
-            <Route path='/home' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/work' element={<Projects />} />
+            <Route path='/dozai/home' element={<Home />} />
+            <Route path='/dozai/about' element={<About />} />
+            <Route path='/dozai/work' element={<Projects />} />
           </Routes>
         </Mycontext.Provider>
       </BrowserRouter>
