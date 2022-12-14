@@ -3,7 +3,7 @@ import React from 'react'
 export const Str = () => {
     return (
         <>
-            <div className="cs container
+            <div className="flex-wrap cs container
             d-flex align-items-center justify-content-center
             " style={{ "height": "100vh" }}>
                 <div className="col-md-6 w-50">
