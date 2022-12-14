@@ -4,11 +4,12 @@ import { useState } from 'react'
 import { HiBars3CenterLeft } from 'react-icons/hi2'
 import { Mycontext } from '../App'
 import { FaTimes } from 'react-icons/fa'
+import { Cart } from './Cart'
 export const Header = () => {
     const { cart, setCart, nav, setNav } = useContext(Mycontext)
     return (
         <>
-           
+            <Cart />
             <div className="navigation container-fluid d-flex justify-content-between align-items-center" style={{ "zIndex": '10000000' }}>
                 <div className="col text-left d-flex flex-row">
                     <h3 className='h4'>DOZAI</h3>
